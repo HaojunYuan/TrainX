@@ -7,25 +7,25 @@
 
 import SwiftUI
 
-struct MainTabView: View {
+struct RootView: View {
     var body: some View {
         TabView {
-            WorkoutsView()
+            TemplatesView()
                 .tabItem {
-                    Label("Workouts", systemImage: "figure.highintensity.intervaltraining")
+                    Label("Workouts", systemImage: "list.bullet.rectangle")
                 }
 
-            HistoryView()
+            History()
                 .tabItem {
                     Label("History", systemImage: "calendar")
                 }
 
-            ChatGPTView()
+            ChatGPT()
                 .tabItem {
                     Label("Ask AI", systemImage: "message")
                 }
 
-            SettingsView()
+            Settings()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
@@ -34,5 +34,5 @@ struct MainTabView: View {
 }
 
 #Preview {
-    MainTabView()
+    RootView()
 }

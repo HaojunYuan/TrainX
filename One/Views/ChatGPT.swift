@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChatGPTView: View {
+struct ChatGPT: View {
     var body: some View {
         Text("Ask AI")
     }
