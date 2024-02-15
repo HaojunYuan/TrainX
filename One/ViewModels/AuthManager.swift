@@ -21,7 +21,6 @@ struct AuthDataResultModel {
 }
 
 final class AuthManager: ObservableObject {
-    @Published var isAuthenticated: Bool = false
     static let shared = AuthManager()
     private init() {
         
@@ -48,8 +47,4 @@ final class AuthManager: ObservableObject {
         let authUser = try? AuthManager.shared.getAuthenticatedUser()
         return authUser != nil
     }
-    
-    func updateUserAuthenticationStatus(isAuthenticated: Bool) {
-            self.isAuthenticated = isAuthenticated
-        }
 }

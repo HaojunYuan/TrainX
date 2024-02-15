@@ -15,27 +15,13 @@ struct TemplatesView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                // Your existing content...
+            
                 Spacer()
-                let userAuthed = authManager.isAuthenticated
-                if userAuthed {
-                    NavigationLink(destination: CreateTemplate()) {
-                        Image(systemName: "plus.circle.fill")
-                            .foregroundStyle(.green)
-                            .font(.system(size: 50))
-                    }
-                } else {
-                    Button(action: {
-                        showSignUpView = true
-                    }) {
-                        Image(systemName: "plus.circle.fill")
-                            .foregroundStyle(.green)
-                            .font(.system(size: 50))
-                    }
+                NavigationLink(destination: CreateTemplate()) {
+                    Image(systemName: "plus.circle.fill")
+                        .foregroundStyle(.green)
+                        .font(.system(size: 50))
                 }
-            }
-            .sheet(isPresented: $showSignUpView) {
-                SignUpView()
             }
             .navigationBarTitle("My Templates", displayMode: .automatic)
         }

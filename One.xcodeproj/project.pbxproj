@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EB7334182B7C66A5005798BA /* CreateTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7334172B7C66A5005798BA /* CreateTemplate.swift */; };
+		EB73341E2B7DB344005798BA /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73341D2B7DB344005798BA /* InputView.swift */; };
 		EB7AF5992B6ECA3F007CDFE6 /* OneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5982B6ECA3F007CDFE6 /* OneApp.swift */; };
 		EB7AF59B2B6ECA3F007CDFE6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF59A2B6ECA3F007CDFE6 /* RootView.swift */; };
 		EB7AF59D2B6ECA41007CDFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7AF59C2B6ECA41007CDFE6 /* Assets.xcassets */; };
@@ -34,7 +35,7 @@
 		EB7AF5E32B7C1530007CDFE6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = EB7AF5E22B7C1530007CDFE6 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		EB7AF5E52B7C1530007CDFE6 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = EB7AF5E42B7C1530007CDFE6 /* FirebaseAppCheck */; };
 		EB7AF5EC2B7C16D0007CDFE6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EB7AF5EB2B7C16D0007CDFE6 /* Podfile */; };
-		EB7AF5EE2B7C176C007CDFE6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5ED2B7C176C007CDFE6 /* SignUpView.swift */; };
+		EB7AF5EE2B7C176C007CDFE6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5ED2B7C176C007CDFE6 /* LoginView.swift */; };
 		EB7AF5F12B7C27AD007CDFE6 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5F02B7C27AD007CDFE6 /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		7D0D9C91F75346AF40A433FF /* Pods_One.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8806954227F2CD7EBF769FA9 /* Pods-One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One.release.xcconfig"; path = "Target Support Files/Pods-One/Pods-One.release.xcconfig"; sourceTree = "<group>"; };
 		EB7334172B7C66A5005798BA /* CreateTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTemplate.swift; sourceTree = "<group>"; };
+		EB73341D2B7DB344005798BA /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		EB7AF5982B6ECA3F007CDFE6 /* OneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneApp.swift; sourceTree = "<group>"; };
 		EB7AF59A2B6ECA3F007CDFE6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		EB7AF59C2B6ECA41007CDFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		EB7AF5D72B7C0728007CDFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EB7AF5EA2B7C16B9007CDFE6 /* One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7AF5EB2B7C16D0007CDFE6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		EB7AF5ED2B7C176C007CDFE6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		EB7AF5ED2B7C176C007CDFE6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EB7AF5F02B7C27AD007CDFE6 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,8 +148,9 @@
 				EB7AF5A72B7ACC2C007CDFE6 /* History.swift */,
 				EB7AF5AB2B7ACCFD007CDFE6 /* ChatGPT.swift */,
 				EB7AF5AD2B7ACD21007CDFE6 /* Settings.swift */,
-				EB7AF5ED2B7C176C007CDFE6 /* SignUpView.swift */,
+				EB7AF5ED2B7C176C007CDFE6 /* LoginView.swift */,
 				EB7334172B7C66A5005798BA /* CreateTemplate.swift */,
+				EB73341D2B7DB344005798BA /* InputView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB73341E2B7DB344005798BA /* InputView.swift in Sources */,
 				EB7AF5D62B7C06FA007CDFE6 /* GoogleSignIn.swift in Sources */,
 				EB7AF5AC2B7ACCFD007CDFE6 /* ChatGPT.swift in Sources */,
 				EB7AF59B2B6ECA3F007CDFE6 /* RootView.swift in Sources */,
@@ -301,7 +305,7 @@
 				EB7AF5AE2B7ACD21007CDFE6 /* Settings.swift in Sources */,
 				EB7AF5AA2B7ACC9D007CDFE6 /* TemplatesView.swift in Sources */,
 				EB7AF5C72B7BBB39007CDFE6 /* WorkoutTemplate.swift in Sources */,
-				EB7AF5EE2B7C176C007CDFE6 /* SignUpView.swift in Sources */,
+				EB7AF5EE2B7C176C007CDFE6 /* LoginView.swift in Sources */,
 				EB7AF5F12B7C27AD007CDFE6 /* AuthManager.swift in Sources */,
 				EB7AF5992B6ECA3F007CDFE6 /* OneApp.swift in Sources */,
 				EB7AF5C02B7B0787007CDFE6 /* AuthenticationService.swift in Sources */,
