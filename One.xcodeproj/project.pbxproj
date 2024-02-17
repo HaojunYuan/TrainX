@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		EB7334182B7C66A5005798BA /* CreateTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7334172B7C66A5005798BA /* CreateTemplate.swift */; };
 		EB73341E2B7DB344005798BA /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73341D2B7DB344005798BA /* InputView.swift */; };
+		EB7334202B800AA6005798BA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73341F2B800AA6005798BA /* RegistrationView.swift */; };
+		EB7334222B800CE5005798BA /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7334212B800CE5005798BA /* NavigationButton.swift */; };
+		EB7334242B8019DB005798BA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7334232B8019DB005798BA /* ProfileView.swift */; };
+		EB7334282B8162BA005798BA /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7334272B8162BA005798BA /* SettingsRowView.swift */; };
 		EB7AF5992B6ECA3F007CDFE6 /* OneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5982B6ECA3F007CDFE6 /* OneApp.swift */; };
 		EB7AF59B2B6ECA3F007CDFE6 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF59A2B6ECA3F007CDFE6 /* RootView.swift */; };
 		EB7AF59D2B6ECA41007CDFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7AF59C2B6ECA41007CDFE6 /* Assets.xcassets */; };
 		EB7AF5A02B6ECA41007CDFE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7AF59F2B6ECA41007CDFE6 /* Preview Assets.xcassets */; };
-		EB7AF5A82B7ACC2C007CDFE6 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5A72B7ACC2C007CDFE6 /* History.swift */; };
+		EB7AF5A82B7ACC2C007CDFE6 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5A72B7ACC2C007CDFE6 /* HistoryView.swift */; };
 		EB7AF5AA2B7ACC9D007CDFE6 /* TemplatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5A92B7ACC9D007CDFE6 /* TemplatesView.swift */; };
-		EB7AF5AC2B7ACCFD007CDFE6 /* ChatGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5AB2B7ACCFD007CDFE6 /* ChatGPT.swift */; };
+		EB7AF5AC2B7ACCFD007CDFE6 /* ChatGPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5AB2B7ACCFD007CDFE6 /* ChatGPTView.swift */; };
 		EB7AF5AE2B7ACD21007CDFE6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5AD2B7ACD21007CDFE6 /* Settings.swift */; };
 		EB7AF5B52B7B0730007CDFE6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EB7AF5B42B7B0730007CDFE6 /* FirebaseAnalytics */; };
 		EB7AF5B72B7B0730007CDFE6 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = EB7AF5B62B7B0730007CDFE6 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -34,24 +38,24 @@
 		EB7AF5E12B7C1530007CDFE6 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB7AF5E02B7C1530007CDFE6 /* FirebaseAnalyticsSwift */; };
 		EB7AF5E32B7C1530007CDFE6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = EB7AF5E22B7C1530007CDFE6 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		EB7AF5E52B7C1530007CDFE6 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = EB7AF5E42B7C1530007CDFE6 /* FirebaseAppCheck */; };
-		EB7AF5EC2B7C16D0007CDFE6 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EB7AF5EB2B7C16D0007CDFE6 /* Podfile */; };
 		EB7AF5EE2B7C176C007CDFE6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5ED2B7C176C007CDFE6 /* LoginView.swift */; };
 		EB7AF5F12B7C27AD007CDFE6 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5F02B7C27AD007CDFE6 /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12E94BF60D9C824AA2537B27 /* Pods-One.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One.debug.xcconfig"; path = "Target Support Files/Pods-One/Pods-One.debug.xcconfig"; sourceTree = "<group>"; };
-		7D0D9C91F75346AF40A433FF /* Pods_One.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8806954227F2CD7EBF769FA9 /* Pods-One.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One.release.xcconfig"; path = "Target Support Files/Pods-One/Pods-One.release.xcconfig"; sourceTree = "<group>"; };
 		EB7334172B7C66A5005798BA /* CreateTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTemplate.swift; sourceTree = "<group>"; };
 		EB73341D2B7DB344005798BA /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		EB73341F2B800AA6005798BA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		EB7334212B800CE5005798BA /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
+		EB7334232B8019DB005798BA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		EB7334272B8162BA005798BA /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		EB7AF5982B6ECA3F007CDFE6 /* OneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneApp.swift; sourceTree = "<group>"; };
 		EB7AF59A2B6ECA3F007CDFE6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		EB7AF59C2B6ECA41007CDFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB7AF59F2B6ECA41007CDFE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EB7AF5A72B7ACC2C007CDFE6 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		EB7AF5A72B7ACC2C007CDFE6 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		EB7AF5A92B7ACC9D007CDFE6 /* TemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesView.swift; sourceTree = "<group>"; };
-		EB7AF5AB2B7ACCFD007CDFE6 /* ChatGPT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT.swift; sourceTree = "<group>"; };
+		EB7AF5AB2B7ACCFD007CDFE6 /* ChatGPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTView.swift; sourceTree = "<group>"; };
 		EB7AF5AD2B7ACD21007CDFE6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		EB7AF5BF2B7B0787007CDFE6 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		EB7AF5C62B7BBB39007CDFE6 /* WorkoutTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTemplate.swift; sourceTree = "<group>"; };
@@ -59,7 +63,6 @@
 		EB7AF5D52B7C06FA007CDFE6 /* GoogleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignIn.swift; sourceTree = "<group>"; };
 		EB7AF5D72B7C0728007CDFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EB7AF5EA2B7C16B9007CDFE6 /* One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB7AF5EB2B7C16D0007CDFE6 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		EB7AF5ED2B7C176C007CDFE6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EB7AF5F02B7C27AD007CDFE6 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,31 +91,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01DFA2C67A4FA8D7A55A43DD /* Frameworks */ = {
+		EB7334252B8161C4005798BA /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				7D0D9C91F75346AF40A433FF /* Pods_One.framework */,
+				EB73341D2B7DB344005798BA /* InputView.swift */,
+				EB7334272B8162BA005798BA /* SettingsRowView.swift */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E7DA0B55FACE6A8EA7E5C35A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				12E94BF60D9C824AA2537B27 /* Pods-One.debug.xcconfig */,
-				8806954227F2CD7EBF769FA9 /* Pods-One.release.xcconfig */,
-			);
-			path = Pods;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		EB7AF58C2B6ECA3F007CDFE6 = {
 			isa = PBXGroup;
 			children = (
-				EB7AF5EB2B7C16D0007CDFE6 /* Podfile */,
 				EB7AF5CC2B7BFE0F007CDFE6 /* GoogleService-Info.plist */,
 				EB7AF5972B6ECA3F007CDFE6 /* One */,
-				E7DA0B55FACE6A8EA7E5C35A /* Pods */,
-				01DFA2C67A4FA8D7A55A43DD /* Frameworks */,
 				EB7AF5EA2B7C16B9007CDFE6 /* One.app */,
 			);
 			sourceTree = "<group>";
@@ -143,14 +135,17 @@
 		EB7AF5A62B7ACC19007CDFE6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EB7334252B8161C4005798BA /* Components */,
 				EB7AF59A2B6ECA3F007CDFE6 /* RootView.swift */,
 				EB7AF5A92B7ACC9D007CDFE6 /* TemplatesView.swift */,
-				EB7AF5A72B7ACC2C007CDFE6 /* History.swift */,
-				EB7AF5AB2B7ACCFD007CDFE6 /* ChatGPT.swift */,
+				EB7AF5A72B7ACC2C007CDFE6 /* HistoryView.swift */,
+				EB7AF5AB2B7ACCFD007CDFE6 /* ChatGPTView.swift */,
 				EB7AF5AD2B7ACD21007CDFE6 /* Settings.swift */,
 				EB7AF5ED2B7C176C007CDFE6 /* LoginView.swift */,
 				EB7334172B7C66A5005798BA /* CreateTemplate.swift */,
-				EB73341D2B7DB344005798BA /* InputView.swift */,
+				EB73341F2B800AA6005798BA /* RegistrationView.swift */,
+				EB7334212B800CE5005798BA /* NavigationButton.swift */,
+				EB7334232B8019DB005798BA /* ProfileView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,7 +182,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB7AF5A32B6ECA41007CDFE6 /* Build configuration list for PBXNativeTarget "One" */;
 			buildPhases = (
-				B8F40F781E3A274FCCD88BB0 /* [CP] Check Pods Manifest.lock */,
 				EB7AF5912B6ECA3F007CDFE6 /* Sources */,
 				EB7AF5922B6ECA3F007CDFE6 /* Frameworks */,
 				EB7AF5932B6ECA3F007CDFE6 /* Resources */,
@@ -260,37 +254,11 @@
 			files = (
 				EB7AF5A02B6ECA41007CDFE6 /* Preview Assets.xcassets in Resources */,
 				EB7AF5CD2B7BFE0F007CDFE6 /* GoogleService-Info.plist in Resources */,
-				EB7AF5EC2B7C16D0007CDFE6 /* Podfile in Resources */,
 				EB7AF59D2B6ECA41007CDFE6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B8F40F781E3A274FCCD88BB0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-One-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB7AF5912B6ECA3F007CDFE6 /* Sources */ = {
@@ -299,12 +267,16 @@
 			files = (
 				EB73341E2B7DB344005798BA /* InputView.swift in Sources */,
 				EB7AF5D62B7C06FA007CDFE6 /* GoogleSignIn.swift in Sources */,
-				EB7AF5AC2B7ACCFD007CDFE6 /* ChatGPT.swift in Sources */,
+				EB7AF5AC2B7ACCFD007CDFE6 /* ChatGPTView.swift in Sources */,
+				EB7334202B800AA6005798BA /* RegistrationView.swift in Sources */,
 				EB7AF59B2B6ECA3F007CDFE6 /* RootView.swift in Sources */,
-				EB7AF5A82B7ACC2C007CDFE6 /* History.swift in Sources */,
+				EB7AF5A82B7ACC2C007CDFE6 /* HistoryView.swift in Sources */,
 				EB7AF5AE2B7ACD21007CDFE6 /* Settings.swift in Sources */,
 				EB7AF5AA2B7ACC9D007CDFE6 /* TemplatesView.swift in Sources */,
+				EB7334242B8019DB005798BA /* ProfileView.swift in Sources */,
+				EB7334222B800CE5005798BA /* NavigationButton.swift in Sources */,
 				EB7AF5C72B7BBB39007CDFE6 /* WorkoutTemplate.swift in Sources */,
+				EB7334282B8162BA005798BA /* SettingsRowView.swift in Sources */,
 				EB7AF5EE2B7C176C007CDFE6 /* LoginView.swift in Sources */,
 				EB7AF5F12B7C27AD007CDFE6 /* AuthManager.swift in Sources */,
 				EB7AF5992B6ECA3F007CDFE6 /* OneApp.swift in Sources */,
@@ -437,7 +409,6 @@
 		};
 		EB7AF5A42B6ECA41007CDFE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12E94BF60D9C824AA2537B27 /* Pods-One.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,7 +439,6 @@
 		};
 		EB7AF5A52B6ECA41007CDFE6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8806954227F2CD7EBF769FA9 /* Pods-One.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

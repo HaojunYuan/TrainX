@@ -39,26 +39,51 @@ final class EmailSignInViewModel: ObservableObject {
             }
             
         }
-        
     }
 }
 
 struct LoginView: View {
-    @Environment(\.presentationMode) var presentationMode
-    @StateObject private var viewModel = EmailSignInViewModel()
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
-        VStack(spacing:24) {
-            InputView(text: $viewModel.email, title: "Email Address", placeHolder: "name@example.com")
-            InputView(text: $viewModel.password, title: "Password", placeHolder: "Enter your password", isSecureField: true)
+        VStack(spacing: 24) {
+            Image("logo")
+                .resizable()
+                .scaledToFit()
+                .cornerRadius(15)
+                .frame(width: 100, height: 120)
+                .padding(.vertical, 30)
+            VStack(spacing: 24) {
+                InputView(text: $email,
+                          title: "Email Address",
+                          placeHolder: "name@example.com")
+                    .autocapitalization(.none)
+                InputView(text: $password,
+                          title: "Password",
+                          placeHolder: "Enter your password",
+                          isSecureField: true)
+            }
+            .padding(.horizontal)
+            .padding(.top, 12)
+            
+            // Sign In
+            NavigationButton(text: "SIGN IN", imageName: "arrow.right")
+            
+            Spacer()
+            // Sign Up
+            NavigationLink {
+                RegistrationView()
+                    .navigationBarBackButtonHidden(true)
+            } label: {
+                HStack (spacing: 2) {
+                    Text("Don't have an account?")
+                    Text("Sign up")
+                        .fontWeight(.bold)
+                }
+                .font(.system(size: 16))
+            }
         }
-        .padding(.horizontal)
-        .padding(.top, 12)
-        
-        // Sign In
-        
-        Spacer()
-        
-        // Sign Up
     }
 }
 

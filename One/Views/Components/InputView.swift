@@ -18,14 +18,14 @@ struct InputView: View {
             Text(title)
                 .foregroundColor(Color(.darkGray))
                 .fontWeight(.semibold)
-                .font(.footnote)
+                .font(.headline)
             
             if isSecureField {
                 SecureField(placeHolder, text: $text)
-                    .font(.system(size: 14))
+                    .font(.system(size: 16))
             } else {
                 TextField(placeHolder, text: $text)
-                    .font(.system(size: 14))
+                    .font(.system(size: 16))
             }
             
             Divider()

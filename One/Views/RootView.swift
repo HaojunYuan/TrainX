@@ -15,12 +15,12 @@ struct RootView: View {
                     Label("Workouts", systemImage: "list.bullet.rectangle")
                 }
 
-            History()
+            HistoryView()
                 .tabItem {
                     Label("History", systemImage: "calendar")
                 }
 
-            ChatGPT()
+            ChatGPTView()
                 .tabItem {
                     Label("Ask AI", systemImage: "message")
                 }
