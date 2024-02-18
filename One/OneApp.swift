@@ -6,33 +6,37 @@
 //
 
 import SwiftUI
-import FirebaseCore
-import FirebaseAuth
-import GoogleSignIn
+import Firebase
 
 @main
 struct OneApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var viewModel = AuthViewModel()
+    
+    init() {
+        FirebaseApp.configure()
+    }
     
     var body: some Scene {
         WindowGroup {
-            RootView()
+            ContentView()
+                .environmentObject(viewModel)
         }
     }
 }
 
-class AppDelegate: NSObject, UIApplicationDelegate {
-    // Reference: https://firebase.google.com/docs/auth/ios/google-signin
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        FirebaseApp.configure()
-        
-        return true
-    }
-    
-    func application(_ app: UIApplication,
-                     open url: URL,
-                     options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        return GIDSignIn.sharedInstance.handle(url)
-    }
-}
+//class AppDelegate: NSObject, UIApplicationDelegate {
+//    // Reference: https://firebase.google.com/docs/auth/ios/google-signin
+//    func application(_ application: UIApplication,
+//                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+//        FirebaseApp.configure()
+//        
+//        return true
+//    }
+//    
+//    func application(_ app: UIApplication,
+//                     open url: URL,
+//                     options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+//        return GIDSignIn.sharedInstance.handle(url)
+//    }
+//}

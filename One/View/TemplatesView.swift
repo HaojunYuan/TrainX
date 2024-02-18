@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TemplatesView: View {
-    @ObservedObject var authManager = AuthManager.shared
     @State var showSignUpView: Bool = false
     @State var navigateToCreateWorkout: Bool = false
     

@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  One
 //
-//  Created by Brian Yuan on 2/3/24.
+//  Created by Brian Yuan on 2/17/24.
 //
 
 import SwiftUI
 
-struct RootView: View {
+struct HomeView: View {
     var body: some View {
         TabView {
             TemplatesView()
@@ -25,7 +25,7 @@ struct RootView: View {
                     Label("Ask AI", systemImage: "message")
                 }
 
-            Settings()
+            ProfileView()
                 .tabItem {
                     Label("Settings", systemImage: "gear")
                 }
@@ -34,5 +34,5 @@ struct RootView: View {
 }
 
 #Preview {
-    RootView()
+    HomeView()
 }

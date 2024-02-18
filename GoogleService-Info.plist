@@ -2,22 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>233835265474-umd6goespva1t7l1jco1324f89svr0nc.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.233835265474-umd6goespva1t7l1jco1324f89svr0nc</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDLb_84cvFoUEx6AQmehKszXrMDePQJLPI</string>
+	<string>AIzaSyC6UU4d0qyjZh4w_n58TuZ42mu0zY6VnbM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>233835265474</string>
+	<string>403134270689</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>Brian.One</string>
 	<key>PROJECT_ID</key>
-	<string>onex-1269c</string>
+	<string>onex-ed68e</string>
 	<key>STORAGE_BUCKET</key>
-	<string>onex-1269c.appspot.com</string>
+	<string>onex-ed68e.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:233835265474:ios:1cef1efcb90d18e36daa5b</string>
+	<string>1:403134270689:ios:4697f8b1db8dd4b9dfbba0</string>
 </dict>
 </plist>
