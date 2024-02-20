@@ -13,10 +13,11 @@ struct TemplatesView: View {
     
     var body: some View {
         NavigationStack {
+            // TODO: Populate templates view with templates from viewmodel.user
             VStack {
             
                 Spacer()
-                NavigationLink(destination: CreateTemplate()) {
+                NavigationLink(destination: TemplateCreationView()) {
                     Image(systemName: "plus.circle.fill")
                         .foregroundStyle(.green)
                         .font(.system(size: 50))

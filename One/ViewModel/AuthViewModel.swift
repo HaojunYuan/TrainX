@@ -68,4 +68,82 @@ class AuthViewModel: ObservableObject {
         guard let snapshot = try? await Firestore.firestore().collection("users").document(uid).getDocument() else { return }
         self.currentUser = try? snapshot.data(as: User.self)
     }
+    
+    // MARK: - Template CRUD Operations
+    
+    func createTemplate(name: String, workouts: [Workout]) async throws {
+        guard let currentUser = self.currentUser else {
+            print("DEBUG: No current user.")
+            return
+        }
+        
+        let newTemplate = Template(name: name, workouts: workouts)
+        var userTemplates = currentUser.templates ?? []
+        userTemplates.append(newTemplate)
+        
+        do {
+            try await Firestore.firestore().collection("users").document(currentUser.id).updateData(["templates": userTemplates.map { try? Firestore.Encoder().encode($0) }])
+            await fetchUser()
+        } catch {
+            print("DEBUG: Failed to create template with error: \(error.localizedDescription)")
+        }
+    }
+    
+    func updateTemplate(templateIndex: Int, newName: String, newWorkouts: [Workout]) async throws {
+        guard var currentUser = self.currentUser else {
+            print("DEBUG: No current user.")
+            return
+        }
+        
+        guard templateIndex >= 0 && templateIndex < currentUser.templates?.count ?? 0 else {
+            print("DEBUG: Invalid template index.")
+            return
+        }
+        
+        currentUser.templates?[templateIndex].name = newName
+        currentUser.templates?[templateIndex].workouts = newWorkouts
+        
+        do {
+            try await Firestore.firestore().collection("users").document(currentUser.id).updateData(["templates": currentUser.templates?.map { try? Firestore.Encoder().encode($0) } ?? []])
+            await fetchUser()
+        } catch {
+            print("DEBUG: Failed to update template with error: \(error.localizedDescription)")
+        }
+    }
+    
+    func deleteTemplate(at index: Int) async throws {
+        guard var currentUser = self.currentUser else {
+            print("DEBUG: No current user.")
+            return
+        }
+        
+        guard index >= 0 && index < currentUser.templates?.count ?? 0 else {
+            print("DEBUG: Invalid template index.")
+            return
+        }
+        
+        currentUser.templates?.remove(at: index)
+        
+        do {
+            try await Firestore.firestore().collection("users").document(currentUser.id).updateData(["templates": currentUser.templates?.map { try? Firestore.Encoder().encode($0) } ?? []])
+            await fetchUser()
+        } catch {
+            print("DEBUG: Failed to delete template with error: \(error.localizedDescription)")
+        }
+    }
+    
+    // MARK: - Simple View for Creating Template (for testing)
+    
+    func createTemplateForTesting() {
+        let newTemplate = Template(name: "Test Template", workouts: [Workout(name: "Bench press", workoutType: .chest, sets: [], unit: .lb)])
+        
+        Task {
+            do {
+                try await createTemplate(name: newTemplate.name, workouts: newTemplate.workouts!)
+                print("Template created successfully.")
+            } catch {
+                print("Failed to create template: \(error.localizedDescription)")
+            }
+        }
+    }
 }
