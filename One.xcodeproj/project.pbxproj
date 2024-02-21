@@ -41,6 +41,8 @@
 		EB6536C02B841A6A0084A227 /* WorkoutCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6536BF2B841A6A0084A227 /* WorkoutCreationView.swift */; };
 		EB6536C22B843FAC0084A227 /* WorkoutSetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6536C12B843FAC0084A227 /* WorkoutSetRowView.swift */; };
 		EB6536C42B8444B90084A227 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6536C32B8444B90084A227 /* ButtonView.swift */; };
+		EB6536CC2B853B5E0084A227 /* SetInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6536CB2B853B5E0084A227 /* SetInputView.swift */; };
+		EB6536CE2B8569140084A227 /* WorkoutRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6536CD2B8569140084A227 /* WorkoutRowView.swift */; };
 		EB7334182B7C66A5005798BA /* CreateTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7334172B7C66A5005798BA /* CreateTemplate.swift */; };
 		EB73341E2B7DB344005798BA /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73341D2B7DB344005798BA /* InputView.swift */; };
 		EB7334202B800AA6005798BA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73341F2B800AA6005798BA /* RegistrationView.swift */; };
@@ -69,6 +71,8 @@
 		EB6536BF2B841A6A0084A227 /* WorkoutCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCreationView.swift; sourceTree = "<group>"; };
 		EB6536C12B843FAC0084A227 /* WorkoutSetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSetRowView.swift; sourceTree = "<group>"; };
 		EB6536C32B8444B90084A227 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		EB6536CB2B853B5E0084A227 /* SetInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetInputView.swift; sourceTree = "<group>"; };
+		EB6536CD2B8569140084A227 /* WorkoutRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRowView.swift; sourceTree = "<group>"; };
 		EB7334172B7C66A5005798BA /* CreateTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTemplate.swift; sourceTree = "<group>"; };
 		EB73341D2B7DB344005798BA /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		EB73341F2B800AA6005798BA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				EB7334272B8162BA005798BA /* SettingsRowView.swift */,
 				EB6536C12B843FAC0084A227 /* WorkoutSetRowView.swift */,
 				EB6536C32B8444B90084A227 /* ButtonView.swift */,
+				EB6536CB2B853B5E0084A227 /* SetInputView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 				EB73342F2B819941005798BA /* HomeView.swift */,
 				EB6536BD2B84199A0084A227 /* TemplateCreationView.swift */,
 				EB6536BF2B841A6A0084A227 /* WorkoutCreationView.swift */,
+				EB6536CD2B8569140084A227 /* WorkoutRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -326,6 +332,7 @@
 				EB6536BE2B84199A0084A227 /* TemplateCreationView.swift in Sources */,
 				EB7334302B819941005798BA /* HomeView.swift in Sources */,
 				EB7AF5D62B7C06FA007CDFE6 /* GoogleSignIn.swift in Sources */,
+				EB6536CE2B8569140084A227 /* WorkoutRowView.swift in Sources */,
 				EB7AF5AC2B7ACCFD007CDFE6 /* ChatGPTView.swift in Sources */,
 				EB6536C42B8444B90084A227 /* ButtonView.swift in Sources */,
 				EB6536BC2B83F24C0084A227 /* Workout.swift in Sources */,
@@ -333,6 +340,7 @@
 				EB7AF59B2B6ECA3F007CDFE6 /* ContentView.swift in Sources */,
 				EB7AF5A82B7ACC2C007CDFE6 /* HistoryView.swift in Sources */,
 				EB7AF5AA2B7ACC9D007CDFE6 /* TemplatesView.swift in Sources */,
+				EB6536CC2B853B5E0084A227 /* SetInputView.swift in Sources */,
 				EB7334242B8019DB005798BA /* ProfileView.swift in Sources */,
 				EB73342E2B818E22005798BA /* LoginView.swift in Sources */,
 				EB6536C22B843FAC0084A227 /* WorkoutSetRowView.swift in Sources */,

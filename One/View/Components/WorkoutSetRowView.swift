@@ -9,21 +9,29 @@ import SwiftUI
 
 struct WorkoutSetRowView: View {
     @Binding var set: Set
+    var onDelete: () -> Void
     
     var body: some View {
         HStack {
-            TextField("Weight", value: $set.weight, formatter: NumberFormatter())
-                .padding()
-            TextField("Repetitions", value: $set.repetitions, formatter: NumberFormatter())
-                .padding()
+            SetInputView(value: $set.weight, title: "Weight")
+            SetInputView(value: $set.repetitions, title: "Repetitions")
+            Button {
+                onDelete()
+            } label: {
+                Image(systemName: "trash")
+            }
         }
-        .padding()
-        .border(Color.gray, width: 1)
-        .cornerRadius(5)
-        .padding(.vertical, 5)
+//        .padding(5)
+//        .overlay(
+//            RoundedRectangle(cornerRadius: 15)
+//                .stroke(Color(.systemGray), lineWidth: 1.5)
+//        )
     }
 }
 
+
+
+
 #Preview {
-    WorkoutSetRowView(set: .constant(Set(weight: 45, repetitions: 8)))
+    WorkoutSetRowView(set: .constant(Set(weight: 45, repetitions: 8)), onDelete: {})
 }

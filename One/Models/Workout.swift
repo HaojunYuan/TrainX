@@ -20,8 +20,8 @@ enum WorkoutType: String, Codable, CaseIterable, Hashable {
 }
 
 enum Unit: String, Codable, CaseIterable {
-    case kg
     case lb
+    case kg
     case min
 }
 
@@ -34,5 +34,5 @@ struct Workout: Codable {
 
 struct Set: Codable {
     var weight: Int?
-    var repetitions: Int
+    var repetitions: Int?
 }

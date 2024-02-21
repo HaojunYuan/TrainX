@@ -8,24 +8,26 @@
 import SwiftUI
 
 struct TemplatesView: View {
-    @State var showSignUpView: Bool = false
-    @State var navigateToCreateWorkout: Bool = false
+//    @Environment var viewModel: AuthViewModel
+    
     
     var body: some View {
         NavigationStack {
             // TODO: Populate templates view with templates from viewmodel.user
             VStack {
-            
                 Spacer()
                 NavigationLink(destination: TemplateCreationView()) {
-                    Image(systemName: "plus.circle.fill")
-                        .foregroundStyle(.green)
-                        .font(.system(size: 50))
+                    VStack {
+                        Image(systemName: "plus.circle.fill")
+                            .foregroundStyle(.green)
+                            .font(.system(size: 40))
+                        Text("New template")
+                    }
                 }
             }
             .navigationBarTitle("My Templates", displayMode: .automatic)
         }
-        .padding()
+        .padding(.bottom)
     }
 }
 

@@ -9,48 +9,64 @@ import SwiftUI
 
 struct WorkoutCreationView: View {
     @Binding var workouts: [Workout]
-    @State private var name: String = ""
+    @State private var workoutName: String = ""
     @State private var workoutType: WorkoutType = .chest
-    @State private var unit: Unit = .kg
-    @State private var sets: [Set] = [Set(repetitions: 0)] // Initial set
+    @State private var unit: Unit = .lb
+    @State private var sets: [Set] = [Set()]
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        VStack {
-            TextField("Workout Name", text: $name)
-                .padding()
+        Form {
+            VStack (alignment: .leading, spacing: 12) {
+                Text("Name")
+                    .foregroundColor(Color(.darkGray))
+                    .fontWeight(.semibold)
+                    .font(.headline)
+                
+                TextField("Enter workout name", text: $workoutName)
+                    .font(.system(size: 16))
+            }
+            
             Picker("Workout Type", selection: $workoutType) {
                 ForEach(WorkoutType.allCases, id: \.self) { type in
                     Text(type.rawValue.capitalized)
                 }
             }
-            .pickerStyle(SegmentedPickerStyle())
+            .pickerStyle(.menu)
+            
             Picker("Unit", selection: $unit) {
                 ForEach(Unit.allCases, id: \.self) { unit in
                     Text(unit.rawValue)
                 }
             }
-            .pickerStyle(SegmentedPickerStyle())
-            ScrollView {
-                ForEach(sets.indices, id: \.self) { index in
-                    WorkoutSetRowView(set: $sets[index])
+            .pickerStyle(.menu)
+            
+            ForEach(sets.indices, id: \.self) { index in
+                WorkoutSetRowView(set: $sets[index], onDelete: { deleteSet(at: index) })                }
+            
+            Button("Add new set") {
+                sets.append(Set())
+            }
+            
+            .navigationBarTitle(Text("New Workout"), displayMode: .inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        let workout = Workout(name: workoutName, workoutType: workoutType, sets: sets, unit: unit)
+                        workouts.append(workout)
+                        dismiss()
+                    } label: {
+                        Text("Save")
+                    }
                 }
             }
-            Button("Add new set") {
-                sets.append(Set(repetitions: 0))
-            }
-            .padding()
-            Button("Save") {
-                let workout = Workout(name: name, workoutType: workoutType, sets: sets, unit: unit)
-                workouts.append(workout)
-            }
-            .padding()
         }
-        .padding()
+    }
+    func deleteSet(at index: Int) {
+        sets.remove(at: index)
     }
 }
 
-
 #Preview {
-
     WorkoutCreationView(workouts: .constant([]))
 }

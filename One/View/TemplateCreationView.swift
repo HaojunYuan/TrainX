@@ -10,41 +10,55 @@ import SwiftUI
 struct TemplateCreationView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     @State private var templateName: String = ""
-    @State private var workouts: [Workout] = []
+    @State private var workouts: [Workout] = [Workout(name: "Bench Press", workoutType: .chest, sets: [Set(weight: 45, repetitions: 12)], unit: .lb), Workout(name: "Let Press", workoutType: .legs, sets: [Set(weight: 135, repetitions: 5)], unit: .lb)]
+    @Environment(\.presentationMode) var presentationMode
+    @State var expandingIndex: Int?
     
     var body: some View {
-        VStack {
-            InputView(text: $templateName,
-                      title: "Name",
-                      placeHolder: "Enter template name")
+        ScrollView {
+            VStack (alignment: .leading, spacing: 12) {
+                Text("Name")
+                    .foregroundColor(Color(.darkGray))
+                    .fontWeight(.semibold)
+                    .font(.headline)
             
-            Spacer()
-            
-            VStack {
-                Spacer()
+                    TextField("Enter template name", text: $templateName)
+                        .font(.system(size: 16))
             }
+            .padding()
             
-            NavigationLink(destination: WorkoutCreationView(workouts: $workouts)) {
-                VStack {
-                    Image(systemName: "plus.circle")
-                    Text("Add workout")
-                        .fixedSize(horizontal: false, vertical: true)
-                        .multilineTextAlignment(.center)
-                }
-                .aspectRatio(3/2, contentMode: .fit)
-                .frame(width: 100, height: 150, alignment: .center)
+            ForEach(workouts.indices, id: \.self) { index in
+                WorkoutRowView(workout: workouts[index], expanded: self.expandingIndex == index)
+                    .onTapGesture {
+                        withAnimation(.spring(response: 0.55,  blendDuration: 0)){
+                            if self.expandingIndex == index {
+                                self.expandingIndex = nil
+                            } else {
+                                self.expandingIndex = index
+                            }
+                        }
+                    }
             }
         }
-        .padding()
+//        .padding()
+        NavigationLink(destination: WorkoutCreationView(workouts: $workouts)) {
+            VStack {
+                Image(systemName: "plus.circle.fill")
+                    .foregroundStyle(.green)
+                    .font(.system(size: 40))
+                Text("Add workout")
+            }
+        }
         .navigationBarTitle(Text("Edit Template"), displayMode: .inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button {
+                Button(action: {
                     // TODO: Create new template in Firebase
                     let newTemplate = Template(name: templateName, workouts: workouts)
                     // Handle saving the new template to Firestore or perform any other action here
                     print("New Template:", newTemplate)
-                } label: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
                     Text("Save")
                 }
             }
