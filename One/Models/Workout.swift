@@ -32,7 +32,8 @@ struct Workout: Codable {
     var unit: Unit
 }
 
-struct Set: Codable {
+struct Set: Codable, Hashable {
+    var id = UUID()
     var weight: Int?
     var repetitions: Int?
 }

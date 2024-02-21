@@ -41,12 +41,7 @@ struct WorkoutCreationView: View {
             }
             .pickerStyle(.menu)
             
-            ForEach(sets.indices, id: \.self) { index in
-                WorkoutSetRowView(set: $sets[index], onDelete: { deleteSet(at: index) })                }
             
-            Button("Add new set") {
-                sets.append(Set())
-            }
             
             .navigationBarTitle(Text("New Workout"), displayMode: .inline)
             .toolbar {

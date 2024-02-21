@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         TabView {
-            TemplatesView()
+            WorkoutPlansView()
                 .tabItem {
                     Label("Workouts", systemImage: "list.bullet.rectangle")
                 }

@@ -77,7 +77,7 @@ class AuthViewModel: ObservableObject {
             return
         }
         
-        let newTemplate = Template(name: name, workouts: workouts)
+        let newTemplate = WorkoutPlan(name: name, workouts: workouts)
         var userTemplates = currentUser.templates ?? []
         userTemplates.append(newTemplate)
         
@@ -135,7 +135,7 @@ class AuthViewModel: ObservableObject {
     // MARK: - Simple View for Creating Template (for testing)
     
     func createTemplateForTesting() {
-        let newTemplate = Template(name: "Test Template", workouts: [Workout(name: "Bench press", workoutType: .chest, sets: [], unit: .lb)])
+        let newTemplate = WorkoutPlan(name: "Test Template", workouts: [Workout(name: "Bench press", workoutType: .chest, sets: [], unit: .lb)])
         
         Task {
             do {

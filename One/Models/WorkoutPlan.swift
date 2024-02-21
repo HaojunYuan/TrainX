@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Template: Codable {
-    var name: String = "New Template"
+struct WorkoutPlan: Codable {
+    var name: String = "New Plan"
     var workouts: [Workout]?
 }
 
