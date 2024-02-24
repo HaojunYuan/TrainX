@@ -54,7 +54,7 @@
 		EB73342C2B81885B005798BA /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73342B2B81885B005798BA /* AuthViewModel.swift */; };
 		EB73342E2B818E22005798BA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73342D2B818E22005798BA /* LoginView.swift */; };
 		EB7334302B819941005798BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73342F2B819941005798BA /* HomeView.swift */; };
-		EB7AF5992B6ECA3F007CDFE6 /* OneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5982B6ECA3F007CDFE6 /* OneApp.swift */; };
+		EB7AF5992B6ECA3F007CDFE6 /* TrainXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5982B6ECA3F007CDFE6 /* TrainXApp.swift */; };
 		EB7AF59B2B6ECA3F007CDFE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF59A2B6ECA3F007CDFE6 /* ContentView.swift */; };
 		EB7AF59D2B6ECA41007CDFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7AF59C2B6ECA41007CDFE6 /* Assets.xcassets */; };
 		EB7AF5A02B6ECA41007CDFE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7AF59F2B6ECA41007CDFE6 /* Preview Assets.xcassets */; };
@@ -86,7 +86,7 @@
 		EB73342B2B81885B005798BA /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		EB73342D2B818E22005798BA /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EB73342F2B819941005798BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		EB7AF5982B6ECA3F007CDFE6 /* OneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneApp.swift; sourceTree = "<group>"; };
+		EB7AF5982B6ECA3F007CDFE6 /* TrainXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainXApp.swift; sourceTree = "<group>"; };
 		EB7AF59A2B6ECA3F007CDFE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EB7AF59C2B6ECA41007CDFE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB7AF59F2B6ECA41007CDFE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		EB7AF5BF2B7B0787007CDFE6 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		EB7AF5D52B7C06FA007CDFE6 /* GoogleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignIn.swift; sourceTree = "<group>"; };
 		EB7AF5D72B7C0728007CDFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		EB7AF5EA2B7C16B9007CDFE6 /* One.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = One.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7AF5EA2B7C16B9007CDFE6 /* TrainX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,15 +175,15 @@
 			isa = PBXGroup;
 			children = (
 				EB5EB8982B8274C900B61CC0 /* GoogleService-Info.plist */,
-				EB7AF5972B6ECA3F007CDFE6 /* One */,
-				EB7AF5EA2B7C16B9007CDFE6 /* One.app */,
+				EB7AF5972B6ECA3F007CDFE6 /* TrainX */,
+				EB7AF5EA2B7C16B9007CDFE6 /* TrainX.app */,
 			);
 			sourceTree = "<group>";
 		};
-		EB7AF5972B6ECA3F007CDFE6 /* One */ = {
+		EB7AF5972B6ECA3F007CDFE6 /* TrainX */ = {
 			isa = PBXGroup;
 			children = (
-				EB7AF5982B6ECA3F007CDFE6 /* OneApp.swift */,
+				EB7AF5982B6ECA3F007CDFE6 /* TrainXApp.swift */,
 				EB7AF5C32B7BBAF6007CDFE6 /* Models */,
 				EB7AF5EF2B7C27A0007CDFE6 /* ViewModel */,
 				EB7AF5A62B7ACC19007CDFE6 /* View */,
@@ -192,7 +192,7 @@
 				EB7AF5D72B7C0728007CDFE6 /* Info.plist */,
 				EB7AF59E2B6ECA41007CDFE6 /* Preview Content */,
 			);
-			path = One;
+			path = TrainX;
 			sourceTree = "<group>";
 		};
 		EB7AF59E2B6ECA41007CDFE6 /* Preview Content */ = {
@@ -249,9 +249,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB7AF5942B6ECA3F007CDFE6 /* One */ = {
+		EB7AF5942B6ECA3F007CDFE6 /* TrainX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB7AF5A32B6ECA41007CDFE6 /* Build configuration list for PBXNativeTarget "One" */;
+			buildConfigurationList = EB7AF5A32B6ECA41007CDFE6 /* Build configuration list for PBXNativeTarget "TrainX" */;
 			buildPhases = (
 				EB7AF5912B6ECA3F007CDFE6 /* Sources */,
 				EB7AF5922B6ECA3F007CDFE6 /* Frameworks */,
@@ -261,7 +261,7 @@
 			);
 			dependencies = (
 			);
-			name = One;
+			name = TrainX;
 			packageProductDependencies = (
 				EB5EB89B2B82752A00B61CC0 /* FirebaseAnalytics */,
 				EB5EB89D2B82752A00B61CC0 /* FirebaseAnalyticsOnDeviceConversion */,
@@ -292,7 +292,7 @@
 				EB5EB8CF2B82752A00B61CC0 /* FirebaseStorageCombine-Community */,
 			);
 			productName = One;
-			productReference = EB7AF5EA2B7C16B9007CDFE6 /* One.app */;
+			productReference = EB7AF5EA2B7C16B9007CDFE6 /* TrainX.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -310,7 +310,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB7AF5902B6ECA3F007CDFE6 /* Build configuration list for PBXProject "One" */;
+			buildConfigurationList = EB7AF5902B6ECA3F007CDFE6 /* Build configuration list for PBXProject "TrainX" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -326,7 +326,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB7AF5942B6ECA3F007CDFE6 /* One */,
+				EB7AF5942B6ECA3F007CDFE6 /* TrainX */,
 			);
 		};
 /* End PBXProject section */
@@ -371,7 +371,7 @@
 				EB6536C02B841A6A0084A227 /* WorkoutCreationView.swift in Sources */,
 				EB73342A2B81824E005798BA /* User.swift in Sources */,
 				EB73342C2B81885B005798BA /* AuthViewModel.swift in Sources */,
-				EB7AF5992B6ECA3F007CDFE6 /* OneApp.swift in Sources */,
+				EB7AF5992B6ECA3F007CDFE6 /* TrainXApp.swift in Sources */,
 				EB7AF5C02B7B0787007CDFE6 /* AuthenticationService.swift in Sources */,
 				EB7334182B7C66A5005798BA /* CreateTemplate.swift in Sources */,
 				EB6536D22B8694F40084A227 /* DeleteSet.swift in Sources */,
@@ -563,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB7AF5902B6ECA3F007CDFE6 /* Build configuration list for PBXProject "One" */ = {
+		EB7AF5902B6ECA3F007CDFE6 /* Build configuration list for PBXProject "TrainX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB7AF5A12B6ECA41007CDFE6 /* Debug */,
@@ -572,7 +572,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB7AF5A32B6ECA41007CDFE6 /* Build configuration list for PBXNativeTarget "One" */ = {
+		EB7AF5A32B6ECA41007CDFE6 /* Build configuration list for PBXNativeTarget "TrainX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB7AF5A42B6ECA41007CDFE6 /* Debug */,

@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 
 @main
-struct OneApp: App {
+struct TrainXApp: App {
 //    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var viewModel = AuthViewModel()
     

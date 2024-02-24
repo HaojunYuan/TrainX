@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/brianyuan/Developer/Swift/One/TrainX.xcodeproj">
    </FileRef>
 </Workspace>

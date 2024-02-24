@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EB7AF5942B6ECA3F007CDFE6"
-               BuildableName = "One.app"
-               BlueprintName = "One"
-               ReferencedContainer = "container:One.xcodeproj">
+               BuildableName = "TrainX.app"
+               BlueprintName = "TrainX"
+               ReferencedContainer = "container:TrainX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EB7AF5942B6ECA3F007CDFE6"
-            BuildableName = "One.app"
-            BlueprintName = "One"
-            ReferencedContainer = "container:One.xcodeproj">
+            BuildableName = "TrainX.app"
+            BlueprintName = "TrainX"
+            ReferencedContainer = "container:TrainX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -67,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EB7AF5942B6ECA3F007CDFE6"
-            BuildableName = "One.app"
-            BlueprintName = "One"
-            ReferencedContainer = "container:One.xcodeproj">
+            BuildableName = "TrainX.app"
+            BlueprintName = "TrainX"
+            ReferencedContainer = "container:TrainX.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
