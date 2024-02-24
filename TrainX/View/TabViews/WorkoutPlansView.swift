@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WorkoutPlansView: View {
-    @Environment var viewModel: AuthViewModel
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         if let user = viewModel.currentUser {

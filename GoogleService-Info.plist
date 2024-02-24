@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyC6UU4d0qyjZh4w_n58TuZ42mu0zY6VnbM</string>
+	<string>AIzaSyC6Ba3y-5mktlMqnJSkiaxFY5vXNduiumk</string>
 	<key>GCM_SENDER_ID</key>
-	<string>403134270689</string>
+	<string>974166005541</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Brian.One</string>
+	<string>Brain.TrainX</string>
 	<key>PROJECT_ID</key>
-	<string>onex-ed68e</string>
+	<string>trainx-5bcf3</string>
 	<key>STORAGE_BUCKET</key>
-	<string>onex-ed68e.appspot.com</string>
+	<string>trainx-5bcf3.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:403134270689:ios:4697f8b1db8dd4b9dfbba0</string>
+	<string>1:974166005541:ios:3f2a70664568bcb1236ccc</string>
 </dict>
 </plist>

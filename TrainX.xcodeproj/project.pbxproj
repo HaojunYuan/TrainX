@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB5EB8992B8274C900B61CC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB5EB8982B8274C900B61CC0 /* GoogleService-Info.plist */; };
 		EB5EB89C2B82752A00B61CC0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EB5EB89B2B82752A00B61CC0 /* FirebaseAnalytics */; };
 		EB5EB89E2B82752A00B61CC0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = EB5EB89D2B82752A00B61CC0 /* FirebaseAnalyticsOnDeviceConversion */; };
 		EB5EB8A02B82752A00B61CC0 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB5EB89F2B82752A00B61CC0 /* FirebaseAnalyticsSwift */; };
@@ -63,10 +62,10 @@
 		EB7AF5AC2B7ACCFD007CDFE6 /* ChatGPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5AB2B7ACCFD007CDFE6 /* ChatGPTView.swift */; };
 		EB7AF5C02B7B0787007CDFE6 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5BF2B7B0787007CDFE6 /* AuthenticationService.swift */; };
 		EB7AF5D62B7C06FA007CDFE6 /* GoogleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5D52B7C06FA007CDFE6 /* GoogleSignIn.swift */; };
+		EBE8873A2B898F7400E2B3CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB5EB8982B8274C900B61CC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EB6536B92B83F1AD0084A227 /* WorkoutPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlan.swift; sourceTree = "<group>"; };
 		EB6536BB2B83F24C0084A227 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		EB6536BD2B84199A0084A227 /* WorkoutPlanCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlanCreationView.swift; sourceTree = "<group>"; };
@@ -97,6 +96,7 @@
 		EB7AF5D52B7C06FA007CDFE6 /* GoogleSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignIn.swift; sourceTree = "<group>"; };
 		EB7AF5D72B7C0728007CDFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EB7AF5EA2B7C16B9007CDFE6 /* TrainX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +174,7 @@
 		EB7AF58C2B6ECA3F007CDFE6 = {
 			isa = PBXGroup;
 			children = (
-				EB5EB8982B8274C900B61CC0 /* GoogleService-Info.plist */,
+				EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */,
 				EB7AF5972B6ECA3F007CDFE6 /* TrainX */,
 				EB7AF5EA2B7C16B9007CDFE6 /* TrainX.app */,
 			);
@@ -338,7 +338,7 @@
 			files = (
 				EB7AF5A02B6ECA41007CDFE6 /* Preview Assets.xcassets in Resources */,
 				EB7AF59D2B6ECA41007CDFE6 /* Assets.xcassets in Resources */,
-				EB5EB8992B8274C900B61CC0 /* GoogleService-Info.plist in Resources */,
+				EBE8873A2B898F7400E2B3CF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,11 +507,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"One/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TrainX/Preview Content\"";
 				DEVELOPMENT_TEAM = DRB7K3U254;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = One/Info.plist;
+				INFOPLIST_FILE = TrainX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -522,7 +522,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Brian.One;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian.TrainX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -537,11 +537,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"One/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TrainX/Preview Content\"";
 				DEVELOPMENT_TEAM = DRB7K3U254;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = One/Info.plist;
+				INFOPLIST_FILE = TrainX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,7 +552,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Brian.One;
+				PRODUCT_BUNDLE_IDENTIFIER = Brian.TrainX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

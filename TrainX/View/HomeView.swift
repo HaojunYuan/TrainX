@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
         TabView {
             WorkoutPlansView()
+                .environmentObject(viewModel)
                 .tabItem {
                     Label("Workouts", systemImage: "list.bullet.rectangle")
                 }

@@ -9,9 +9,9 @@ import SwiftUI
 
 struct WorkoutCreationView: View {
     @Binding var workouts: [Workout]
-    @State private var workoutName: String = ""
-    @State private var workoutType: WorkoutType = .chest
-    @State private var unit: Unit
+    @State var workoutName: String = ""
+    @State var workoutType: WorkoutType = .chest
+    @State var unit: Unit = .lb
     @Environment(\.dismiss) var dismiss
     
     var body: some View {

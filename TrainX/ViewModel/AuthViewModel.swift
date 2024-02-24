@@ -139,7 +139,7 @@ class AuthViewModel: ObservableObject {
         
         Task {
             do {
-                try await createTemplate(name: newTemplate.name, workouts: newTemplate.workouts!)
+                try await createTemplate(name: newTemplate.name, workouts: newTemplate.workouts)
                 print("Template created successfully.")
             } catch {
                 print("Failed to create template: \(error.localizedDescription)")
