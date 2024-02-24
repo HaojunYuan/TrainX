@@ -8,38 +8,43 @@
 import SwiftUI
 
 struct WorkoutPlansView: View {
-//    @Environment var viewModel: AuthViewModel
+    @Environment var viewModel: AuthViewModel
     
     var body: some View {
-        NavigationView {
-            VStack {
-
-                // TODO: Populate templates view with templates from viewmodel.user
-                ScrollView {
-                    LazyVGrid(columns: [GridItem(), GridItem()]) {
-                        ForEach(0..<10) { _ in // Assuming there are 10 workout plans
-                            WorkoutPlanGridItemView()
+        if let user = viewModel.currentUser {
+            NavigationView {
+                VStack {
+                    // TODO: Populate templates view with templates from viewmodel.user
+                    ScrollView {
+                        if let templates = user.templates {
+                            LazyVGrid(columns: [GridItem(), GridItem()]) {
+                                ForEach(templates, id: \.id) { template in
+                                    WorkoutPlanGridItemView(workoutName: template.name)
+                                }
+                            }
+                            .padding()
                         }
                     }
-                    .padding()
-                }
-//                .scrollClipDisabled()
-                // Button to create new workout plan
-                NavigationLink(destination: WorkoutPlanCreationView()) {
-                    VStack {
-                        Image(systemName: "plus.circle.fill")
-                            .foregroundStyle(.green)
-                            .font(.system(size: 40))
-                        Text("New workout plan")
-                            .padding(.bottom)
+                    //                .scrollClipDisabled()
+                    // Button to create new workout plan
+                    NavigationLink(destination: WorkoutPlanCreationView()) {
+                        VStack {
+                            Image(systemName: "plus.circle.fill")
+                                .foregroundStyle(.green)
+                                .font(.system(size: 40))
+                            Text("New workout plan")
+                                .padding(.bottom)
+                        }
                     }
                 }
+                .navigationBarTitle("My Workout Plans", displayMode: .automatic)
             }
-            .navigationBarTitle("My Workout Plans", displayMode: .automatic)
+        } else {
+            Text("Loading workout plans...")
         }
     }
 }
 
-#Preview {
-    WorkoutPlansView()
-}
+//#Preview {
+//    WorkoutPlansView()
+//}

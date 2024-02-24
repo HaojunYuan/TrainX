@@ -11,8 +11,7 @@ struct WorkoutCreationView: View {
     @Binding var workouts: [Workout]
     @State private var workoutName: String = ""
     @State private var workoutType: WorkoutType = .chest
-    @State private var unit: Unit = .lb
-    @State private var sets: [Set] = [Set()]
+    @State private var unit: Unit
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -40,14 +39,11 @@ struct WorkoutCreationView: View {
                 }
             }
             .pickerStyle(.menu)
-            
-            
-            
             .navigationBarTitle(Text("New Workout"), displayMode: .inline)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        let workout = Workout(name: workoutName, workoutType: workoutType, sets: sets, unit: unit)
+                        let workout = Workout(name: workoutName, workoutType: workoutType, unit: unit)
                         workouts.append(workout)
                         dismiss()
                     } label: {
@@ -57,11 +53,8 @@ struct WorkoutCreationView: View {
             }
         }
     }
-    func deleteSet(at index: Int) {
-        sets.remove(at: index)
-    }
 }
 
-#Preview {
-    WorkoutCreationView(workouts: .constant([]))
-}
+//#Preview {
+//    WorkoutCreationView(workouts: .constant([]))
+//}

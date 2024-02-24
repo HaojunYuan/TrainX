@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SetInputView: View {
+struct WorkoutSetInputView: View {
     @Binding var value: Int?
     var title: String
     @FocusState private var editing
@@ -39,5 +39,5 @@ struct CustomTextFieldStyle: TextFieldStyle {
 }
 
 #Preview {
-    SetInputView(value: .constant(70), title: "Weight")
+    WorkoutSetInputView(value: .constant(70), title: "Weight")
 }

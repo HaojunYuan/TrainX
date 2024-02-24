@@ -7,9 +7,8 @@
 
 import Foundation
 
-struct WorkoutPlan: Codable {
+struct WorkoutPlan: Codable, Hashable {
+    var id = UUID()
     var name: String = "New Plan"
-    var workouts: [Workout]?
+    var workouts: [Workout] = []
 }
-
-

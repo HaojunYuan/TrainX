@@ -26,7 +26,7 @@ struct WorkoutRowView: View {
                 ScrollView {
                     VStack {
                         ForEach($workout.sets, id: \.id) { setBinding in
-                            WorkoutSetRowView(set: setBinding, deleteSet: deleteSet)
+                            WorkoutSetRowView(set: setBinding, unit: workout.unit, deleteSet: deleteSet)
                         }
                     }
                 }

@@ -25,10 +25,11 @@ enum Unit: String, Codable, CaseIterable {
     case min
 }
 
-struct Workout: Codable {
+struct Workout: Codable, Hashable {
+    var id = UUID()
     var name: String
     var workoutType: WorkoutType
-    var sets: [Set]
+    var sets: [Set] = []
     var unit: Unit
 }
 
