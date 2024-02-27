@@ -16,7 +16,7 @@ enum WorkoutType: String, Codable, CaseIterable, Hashable {
     case shoulders
     case core
     case cardio
-    case wholeBody
+    case functional
 }
 
 enum Unit: String, Codable, CaseIterable {

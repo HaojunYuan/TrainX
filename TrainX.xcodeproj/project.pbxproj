@@ -44,7 +44,6 @@
 		EB6536CE2B8569140084A227 /* WorkoutRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6536CD2B8569140084A227 /* WorkoutRowView.swift */; };
 		EB6536D02B8691C10084A227 /* WorkoutPlanGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6536CF2B8691C10084A227 /* WorkoutPlanGridItemView.swift */; };
 		EB6536D22B8694F40084A227 /* DeleteSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6536D12B8694F40084A227 /* DeleteSet.swift */; };
-		EB7334182B7C66A5005798BA /* CreateTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7334172B7C66A5005798BA /* CreateTemplate.swift */; };
 		EB73341E2B7DB344005798BA /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73341D2B7DB344005798BA /* InputView.swift */; };
 		EB7334202B800AA6005798BA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB73341F2B800AA6005798BA /* RegistrationView.swift */; };
 		EB7334242B8019DB005798BA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7334232B8019DB005798BA /* ProfileView.swift */; };
@@ -76,7 +75,6 @@
 		EB6536CD2B8569140084A227 /* WorkoutRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutRowView.swift; sourceTree = "<group>"; };
 		EB6536CF2B8691C10084A227 /* WorkoutPlanGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlanGridItemView.swift; sourceTree = "<group>"; };
 		EB6536D12B8694F40084A227 /* DeleteSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteSet.swift; sourceTree = "<group>"; };
-		EB7334172B7C66A5005798BA /* CreateTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTemplate.swift; sourceTree = "<group>"; };
 		EB73341D2B7DB344005798BA /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		EB73341F2B800AA6005798BA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		EB7334232B8019DB005798BA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 				EB6536D32B86A2D80084A227 /* Workout */,
 				EB6536D42B86A8EB0084A227 /* TabViews */,
 				EB7AF59A2B6ECA3F007CDFE6 /* ContentView.swift */,
-				EB7334172B7C66A5005798BA /* CreateTemplate.swift */,
 				EB73341F2B800AA6005798BA /* RegistrationView.swift */,
 				EB73342D2B818E22005798BA /* LoginView.swift */,
 				EB73342F2B819941005798BA /* HomeView.swift */,
@@ -373,7 +370,6 @@
 				EB73342C2B81885B005798BA /* AuthViewModel.swift in Sources */,
 				EB7AF5992B6ECA3F007CDFE6 /* TrainXApp.swift in Sources */,
 				EB7AF5C02B7B0787007CDFE6 /* AuthenticationService.swift in Sources */,
-				EB7334182B7C66A5005798BA /* CreateTemplate.swift in Sources */,
 				EB6536D22B8694F40084A227 /* DeleteSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

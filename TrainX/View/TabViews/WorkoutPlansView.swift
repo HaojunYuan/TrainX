@@ -16,10 +16,13 @@ struct WorkoutPlansView: View {
                 VStack {
                     // TODO: Populate templates view with templates from viewmodel.user
                     ScrollView {
-                        if let templates = user.templates {
-                            LazyVGrid(columns: [GridItem(), GridItem()]) {
-                                ForEach(templates, id: \.id) { template in
-                                    WorkoutPlanGridItemView(workoutName: template.name)
+                        if let workoutPlans = user.workoutPlans {
+                            let columns = [GridItem(),
+                                           GridItem()]
+                            LazyVGrid(columns: columns) {
+                                ForEach(workoutPlans, id: \.id) { workoutPlan in
+                                    let workoutNames = workoutPlan.workouts.map { $0.name } // Extract workout names
+                                    WorkoutPlanGridItemView(workoutPlanName: workoutPlan.name, workoutNames: workoutNames)
                                 }
                             }
                             .padding()
@@ -39,6 +42,7 @@ struct WorkoutPlansView: View {
                 }
                 .navigationBarTitle("My Workout Plans", displayMode: .automatic)
             }
+            .padding()
         } else {
             Text("Loading workout plans...")
         }

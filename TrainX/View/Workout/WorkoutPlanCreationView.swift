@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WorkoutPlanCreationView: View {
     @EnvironmentObject var viewModel: AuthViewModel
-    @State private var workoutPlanName: String = ""
+    @State private var name: String = ""
     @State private var workouts: [Workout] = [Workout(name: "Bench Press", workoutType: .chest, sets: [Set(weight: 45, repetitions: 12)], unit: .lb), Workout(name: "Let Press", workoutType: .legs, sets: [Set(weight: 135, repetitions: 5)], unit: .lb)]
     @Environment(\.presentationMode) var presentationMode
     @State var expandingIndex: Int?
@@ -17,12 +17,12 @@ struct WorkoutPlanCreationView: View {
     var body: some View {
         ScrollView {
             VStack (alignment: .leading, spacing: 12) {
-                Text("Plan Name")
+                Text("Workout Plan Name")
                     .foregroundColor(Color(.darkGray))
                     .fontWeight(.semibold)
                     .font(.headline)
             
-                    TextField("Enter template name", text: $workoutPlanName)
+                TextField("Enter plan name", text: $name)
                         .font(.system(size: 16))
             }
             .padding()
@@ -52,13 +52,13 @@ struct WorkoutPlanCreationView: View {
         .navigationBarTitle(Text("Edit Template"), displayMode: .inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button(action: {
+                Button {
                     // TODO: Create new template in Firebase
-                    let newTemplate = WorkoutPlan(name: workoutPlanName, workouts: workouts)
-                    // Handle saving the new template to Firestore or perform any other action here
-                    print("New Template:", newTemplate)
+                    Task {
+                        try await viewModel.createWorkoutPlan(name: name, workouts: workouts)
+                    }
                     presentationMode.wrappedValue.dismiss()
-                }) {
+                } label: {
                     Text("Save")
                 }
             }
