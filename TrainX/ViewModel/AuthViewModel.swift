@@ -95,16 +95,16 @@ class AuthViewModel: ObservableObject {
             return
         }
         
-        guard planIndex >= 0 && planIndex < currentUser.workoutPlans?.count ?? 0 else {
+        guard planIndex >= 0 && planIndex < currentUser.workoutPlans.count else {
             print("DEBUG: Invalid template index.")
             return
         }
         
-        currentUser.workoutPlans?[planIndex].name = newName
-        currentUser.workoutPlans?[planIndex].workouts = newWorkouts
+        currentUser.workoutPlans[planIndex].name = newName
+        currentUser.workoutPlans[planIndex].workouts = newWorkouts
         
         do {
-            try await Firestore.firestore().collection("users").document(currentUser.id).updateData(["workoutPlans": currentUser.workoutPlans?.map { try? Firestore.Encoder().encode($0) } ?? []])
+            try await Firestore.firestore().collection("users").document(currentUser.id).updateData(["workoutPlans": currentUser.workoutPlans.map { try? Firestore.Encoder().encode($0) } ])
             await fetchUser()
         } catch {
             print("DEBUG: Failed to update template with error: \(error.localizedDescription)")
@@ -117,15 +117,15 @@ class AuthViewModel: ObservableObject {
             return
         }
         
-        guard index >= 0 && index < currentUser.workoutPlans?.count ?? 0 else {
+        guard index >= 0 && index < currentUser.workoutPlans.count else {
             print("DEBUG: Invalid template index.")
             return
         }
         
-        currentUser.workoutPlans?.remove(at: index)
+        currentUser.workoutPlans.remove(at: index)
         
         do {
-            try await Firestore.firestore().collection("users").document(currentUser.id).updateData(["workoutPlans": currentUser.workoutPlans?.map { try? Firestore.Encoder().encode($0) } ?? []])
+            try await Firestore.firestore().collection("users").document(currentUser.id).updateData(["workoutPlans": currentUser.workoutPlans.map { try? Firestore.Encoder().encode($0) } ])
             await fetchUser()
         } catch {
             print("DEBUG: Failed to delete template with error: \(error.localizedDescription)")

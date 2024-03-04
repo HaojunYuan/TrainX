@@ -12,25 +12,23 @@ struct WorkoutPlansView: View {
     
     var body: some View {
         if let user = viewModel.currentUser {
-            NavigationView {
+            NavigationStack {
                 VStack {
                     // TODO: Populate templates view with templates from viewmodel.user
                     ScrollView {
-                        if let workoutPlans = user.workoutPlans {
+                        if user.workoutPlans.count > 0 {
                             let columns = [GridItem(),
                                            GridItem()]
                             LazyVGrid(columns: columns) {
-                                ForEach(workoutPlans, id: \.id) { workoutPlan in
-                                    let workoutNames = workoutPlan.workouts.map { $0.name } // Extract workout names
-                                    WorkoutPlanGridItemView(workoutPlanName: workoutPlan.name, workoutNames: workoutNames)
+                                ForEach(user.workoutPlans.indices, id: \.self) { index in
+                                    WorkoutPlanGridItemView(workoutPlan: user.workoutPlans[index], index: index)
                                 }
                             }
-                            .padding()
                         }
                     }
                     //                .scrollClipDisabled()
                     // Button to create new workout plan
-                    NavigationLink(destination: WorkoutPlanCreationView()) {
+                    NavigationLink(destination: CreateWorkoutPlanView()) {
                         VStack {
                             Image(systemName: "plus.circle.fill")
                                 .foregroundStyle(.green)
@@ -42,7 +40,7 @@ struct WorkoutPlansView: View {
                 }
                 .navigationBarTitle("My Workout Plans", displayMode: .automatic)
             }
-            .padding()
+            .padding(15)
         } else {
             Text("Loading workout plans...")
         }

@@ -11,7 +11,7 @@ struct User: Identifiable, Codable {
     let id: String
     let userName: String
     let email: String
-    var workoutPlans: [WorkoutPlan]?
+    var workoutPlans: [WorkoutPlan] = []
     
     var initials: String {
         let formatter = PersonNameComponentsFormatter()

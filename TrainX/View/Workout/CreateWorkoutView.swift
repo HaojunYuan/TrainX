@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WorkoutCreationView: View {
+struct CreateWorkoutView: View {
     @Binding var workouts: [Workout]
     @State var workoutName: String = ""
     @State var workoutType: WorkoutType = .chest

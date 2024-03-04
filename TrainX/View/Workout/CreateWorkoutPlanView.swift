@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct WorkoutPlanCreationView: View {
+struct CreateWorkoutPlanView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     @State private var name: String = ""
     @State private var workouts: [Workout] = [Workout(name: "Bench Press", workoutType: .chest, sets: [Set(weight: 45, repetitions: 12)], unit: .lb), Workout(name: "Let Press", workoutType: .legs, sets: [Set(weight: 135, repetitions: 5)], unit: .lb)]
     @Environment(\.presentationMode) var presentationMode
-    @State var expandingIndex: Int?
+    @State private var expandingIndex: Int?
     
     var body: some View {
         ScrollView {
@@ -41,7 +41,7 @@ struct WorkoutPlanCreationView: View {
             .scrollClipDisabled()
         }
 //        .padding()
-        NavigationLink(destination: WorkoutCreationView(workouts: $workouts)) {
+        NavigationLink(destination: CreateWorkoutView(workouts: $workouts)) {
             VStack {
                 Image(systemName: "plus.circle.fill")
                     .foregroundStyle(.green)
@@ -53,7 +53,6 @@ struct WorkoutPlanCreationView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    // TODO: Create new template in Firebase
                     Task {
                         try await viewModel.createWorkoutPlan(name: name, workouts: workouts)
                     }
@@ -66,8 +65,6 @@ struct WorkoutPlanCreationView: View {
     }
 }
 
-
-
 #Preview {
-    WorkoutPlanCreationView()
+    CreateWorkoutPlanView()
 }
