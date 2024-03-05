@@ -10,18 +10,41 @@ import SwiftUI
 struct WorkoutPlanGridItemView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     @State private var showUpdatingView = false
+    @State private var showDetailView = false
     let workoutPlan: WorkoutPlan
     let index: Int
     let maxWorkoutCountToShow = 5
-    
+
     var body: some View {
-        VStack(alignment: .leading) {
-            // Display workout plan name
-            HStack(alignment: .firstTextBaseline) {
-                Text(workoutPlan.name == "" ? "New plan" : workoutPlan.name)
-                    .font(.headline)
+        ZStack(alignment: .topTrailing) {
+            VStack(alignment: .leading) {
+                // Display workout plan name
+                HStack(alignment: .firstTextBaseline) {
+                    Text(workoutPlan.name == "" ? "New plan" : workoutPlan.name)
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding(.bottom)
+                    Spacer()
+                }
+                // Display the first 5 workout names
+                Text(workoutPlan.workouts.prefix(maxWorkoutCountToShow).map(\.name).joined(separator: ", "))
                     .foregroundColor(.white)
-                    .padding(.bottom)
+                    .font(.footnote)
+                //                .multilineTextAlignment(.leading)
+                Spacer()
+            }
+            .frame(width: 130, height: 120)
+            .padding()
+            .background(Color.gray)
+            .cornerRadius(10)
+            .onTapGesture {
+                self.showDetailView.toggle()
+            }
+            .navigationDestination(isPresented: $showDetailView) {
+                WorkoutPlanDetailView(workoutPlan: workoutPlan)
+            }
+            
+            HStack(alignment: .firstTextBaseline) {
                 Spacer()
                 Menu {
                     Button {
@@ -44,20 +67,10 @@ struct WorkoutPlanGridItemView: View {
                     UpdateWorkoutPlanView(index: index)
                 }
             }
-            // Display the first 5 workout names
-            let workoutNames = workoutPlan.workouts.map { $0.name }
-            Text(workoutNames.prefix(maxWorkoutCountToShow).joined(separator: ", "))
-                .foregroundColor(.white)
-                .font(.footnote)
-            //                .multilineTextAlignment(.leading)
-            Spacer()
+            .padding()
         }
-        .frame(width: 130, height: 120)
-        .padding()
-        .background(Color.gray)
-        .cornerRadius(10)
     }
-    
+
     func showDeleteAlert() {
         let alert = UIAlertController(title: "Delete this workout plan?", message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))

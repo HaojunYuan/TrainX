@@ -63,6 +63,7 @@
 		EB7AF5D62B7C06FA007CDFE6 /* GoogleSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AF5D52B7C06FA007CDFE6 /* GoogleSignIn.swift */; };
 		EBE8873A2B898F7400E2B3CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */; };
 		EBE8873C2B95214900E2B3CF /* UpdateWorkoutPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8873B2B95214900E2B3CF /* UpdateWorkoutPlanView.swift */; };
+		EBE887402B97AD6900E2B3CF /* WorkoutPlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8873F2B97AD6900E2B3CF /* WorkoutPlanDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		EB7AF5EA2B7C16B9007CDFE6 /* TrainX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBE8873B2B95214900E2B3CF /* UpdateWorkoutPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWorkoutPlanView.swift; sourceTree = "<group>"; };
+		EBE8873F2B97AD6900E2B3CF /* WorkoutPlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlanDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,11 +142,14 @@
 		EB6536D32B86A2D80084A227 /* Workout */ = {
 			isa = PBXGroup;
 			children = (
+				EB6536CB2B853B5E0084A227 /* WorkoutSetInputView.swift */,
+				EB6536CF2B8691C10084A227 /* WorkoutPlanGridItemView.swift */,
 				EB6536C12B843FAC0084A227 /* WorkoutSetRowView.swift */,
 				EB6536BD2B84199A0084A227 /* CreateWorkoutPlanView.swift */,
 				EB6536BF2B841A6A0084A227 /* CreateWorkoutView.swift */,
 				EB6536CD2B8569140084A227 /* WorkoutRowView.swift */,
 				EBE8873B2B95214900E2B3CF /* UpdateWorkoutPlanView.swift */,
+				EBE8873F2B97AD6900E2B3CF /* WorkoutPlanDetailView.swift */,
 			);
 			path = Workout;
 			sourceTree = "<group>";
@@ -166,8 +171,6 @@
 				EB73341D2B7DB344005798BA /* InputView.swift */,
 				EB7334272B8162BA005798BA /* SettingsRowView.swift */,
 				EB6536C32B8444B90084A227 /* ButtonView.swift */,
-				EB6536CB2B853B5E0084A227 /* WorkoutSetInputView.swift */,
-				EB6536CF2B8691C10084A227 /* WorkoutPlanGridItemView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				EB6536C42B8444B90084A227 /* ButtonView.swift in Sources */,
 				EB6536BC2B83F24C0084A227 /* Workout.swift in Sources */,
 				EB6536D02B8691C10084A227 /* WorkoutPlanGridItemView.swift in Sources */,
+				EBE887402B97AD6900E2B3CF /* WorkoutPlanDetailView.swift in Sources */,
 				EB7334202B800AA6005798BA /* RegistrationView.swift in Sources */,
 				EB7AF59B2B6ECA3F007CDFE6 /* ContentView.swift in Sources */,
 				EB7AF5A82B7ACC2C007CDFE6 /* HistoryView.swift in Sources */,
