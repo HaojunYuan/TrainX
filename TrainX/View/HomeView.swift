@@ -22,7 +22,7 @@ struct HomeView: View {
                     Label("History", systemImage: "calendar")
                 }
 
-            ChatGPTView()
+            ChatView()
                 .tabItem {
                     Label("Ask AI", systemImage: "message")
                 }

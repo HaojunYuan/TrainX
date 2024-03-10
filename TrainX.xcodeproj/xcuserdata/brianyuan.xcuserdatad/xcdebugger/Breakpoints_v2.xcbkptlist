@@ -18,68 +18,6 @@
             endingLineNumber = "47"
             landmarkName = "createUser(withEmail:password:userName:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F51C42B4-0203-4E20-AADE-8185F12AE089 - 959a1c59bd8672d1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for One.AuthViewModel.createUser(withEmail: Swift.String, password: Swift.String, userName: Swift.String) async throws -&gt; ()"
-                  moduleName = "One"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brianyuan/Developer/Swift/One/One/ViewModel/AuthViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "1180">
-               </Location>
-               <Location
-                  uuid = "F51C42B4-0203-4E20-AADE-8185F12AE089 - 44681400697bfad5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(5) suspend resume partial function for One.AuthViewModel.createUser(withEmail: Swift.String, password: Swift.String, userName: Swift.String) async throws -&gt; ()"
-                  moduleName = "One"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brianyuan/Developer/Swift/One/One/ViewModel/AuthViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "128">
-               </Location>
-               <Location
-                  uuid = "F51C42B4-0203-4E20-AADE-8185F12AE089 - 2cb11027cf123ed7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(6) suspend resume partial function for One.AuthViewModel.createUser(withEmail: Swift.String, password: Swift.String, userName: Swift.String) async throws -&gt; ()"
-                  moduleName = "One"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brianyuan/Developer/Swift/One/One/ViewModel/AuthViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "200">
-               </Location>
-               <Location
-                  uuid = "F51C42B4-0203-4E20-AADE-8185F12AE089 - f4f9eccb152d62c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(7) suspend resume partial function for One.AuthViewModel.createUser(withEmail: Swift.String, password: Swift.String, userName: Swift.String) async throws -&gt; ()"
-                  moduleName = "One"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/brianyuan/Developer/Swift/One/One/ViewModel/AuthViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "260">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
