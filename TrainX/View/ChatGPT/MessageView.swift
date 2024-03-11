@@ -14,16 +14,29 @@ struct MessageView: View {
         HStack {
             if message.role == .user {
                 Spacer()
-            }
-            
-            MessageBubble(message: message)
-                .padding(.horizontal, 16)
-                .padding(.vertical, 8)
+                MessageBubble(message: message)
+                    .padding(8)
+                Text("Me")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(width: 50, height: 50)
+                    .background(Color(.systemGray3))
+                    .clipShape(Circle())
+            } 
             
             if message.role == .assistant {
+                Image("ChatGPT Logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 50, height: 50)
+                    .clipShape(Circle())
+                MessageBubble(message: message)
+                    .padding(8)
                 Spacer()
             }
         }
+        .padding()
     }
 }
 
