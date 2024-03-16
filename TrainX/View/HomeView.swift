@@ -26,6 +26,11 @@ struct HomeView: View {
                 .tabItem {
                     Label("Ask AI", systemImage: "message")
                 }
+            
+            FeedView()
+                .tabItem {
+                    Image(systemName: "house")
+                }
 
             ProfileView()
                 .tabItem {

@@ -11,16 +11,16 @@ struct MessageView: View {
     let message: Message
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             if message.role == .user {
                 Spacer()
                 MessageBubble(message: message)
-                    .padding(8)
+                    .padding(.horizontal, 8)
                 Text("Me")
                     .font(.title2)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
-                    .frame(width: 50, height: 50)
+                    .frame(width: 40, height: 40)
                     .background(Color(.systemGray3))
                     .clipShape(Circle())
             } 
@@ -29,10 +29,10 @@ struct MessageView: View {
                 Image("ChatGPT Logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 50, height: 50)
+                    .frame(width: 40, height: 40)
                     .clipShape(Circle())
                 MessageBubble(message: message)
-                    .padding(8)
+                    .padding(.horizontal, 8)
                 Spacer()
             }
         }
@@ -53,5 +53,5 @@ struct MessageBubble: View {
 }
 
 #Preview {
-    MessageView(message: Message(id: UUID(), role: .user, content: "Hello", createAt: Date()))
+    MessageView(message: Message(id: UUID(), role: .assistant, content: "Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello Hello", createAt: Date()))
 }

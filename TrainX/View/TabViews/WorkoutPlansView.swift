@@ -14,7 +14,6 @@ struct WorkoutPlansView: View {
         if let user = viewModel.currentUser {
             NavigationStack {
                 VStack {
-                    // TODO: Populate templates view with templates from viewmodel.user
                     ScrollView {
                         if user.workoutPlans.count > 0 {
                             let columns = [GridItem(),
@@ -26,12 +25,12 @@ struct WorkoutPlansView: View {
                             }
                         }
                     }
+                    .padding()
                     //                .scrollClipDisabled()
-                    // Button to create new workout plan
                     NavigationLink(destination: CreateWorkoutPlanView()) {
                         VStack {
                             Image(systemName: "plus.circle.fill")
-                                .foregroundStyle(.green)
+                                .foregroundStyle(.blue)
                                 .font(.system(size: 40))
                             Text("New workout plan")
                                 .padding(.bottom)

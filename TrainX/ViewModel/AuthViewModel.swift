@@ -59,10 +59,6 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func deleteAccount() {
-        
-    }
-    
     func fetchUser() async {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         guard let snapshot = try? await Firestore.firestore().collection("users").document(uid).getDocument() else { return }
@@ -78,7 +74,7 @@ class AuthViewModel: ObservableObject {
         }
         
         let newWorkoutPlan = WorkoutPlan(name: name, workouts: workouts)
-        var userWorkoutPlans = currentUser.workoutPlans ?? []
+        var userWorkoutPlans = currentUser.workoutPlans
         userWorkoutPlans.append(newWorkoutPlan)
         
         do {

@@ -68,6 +68,17 @@
 		EB8B64D92B9E35BB00A1F067 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64D82B9E35BB00A1F067 /* OpenAIService.swift */; };
 		EB8B64DD2B9E4A6900A1F067 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64DC2B9E4A6900A1F067 /* MessageView.swift */; };
 		EB8B64DF2B9E519900A1F067 /* Swift.gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EB8B64DE2B9E519900A1F067 /* Swift.gitignore */; };
+		EB8B64E52BA6379500A1F067 /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64E42BA6379500A1F067 /* NewPostView.swift */; };
+		EB8B64E72BA637AC00A1F067 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64E62BA637AC00A1F067 /* Post.swift */; };
+		EB8B64E92BA638E000A1F067 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64E82BA638E000A1F067 /* PostService.swift */; };
+		EB8B64ED2BA63A4000A1F067 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EB8B64EC2BA63A4000A1F067 /* Kingfisher */; };
+		EB8B64EF2BA63C0B00A1F067 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64EE2BA63C0B00A1F067 /* UploadPostViewModel.swift */; };
+		EB8B64F62BA6464300A1F067 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64F52BA6464300A1F067 /* FeedViewModel.swift */; };
+		EB8B64F82BA6465100A1F067 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64F72BA6465100A1F067 /* FeedView.swift */; };
+		EB8B64FA2BA646CB00A1F067 /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64F92BA646CB00A1F067 /* PostRowView.swift */; };
+		EB8B64FC2BA646E600A1F067 /* PostRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64FB2BA646E600A1F067 /* PostRowViewModel.swift */; };
+		EB8B64FE2BA648DC00A1F067 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B64FD2BA648DC00A1F067 /* UserService.swift */; };
+		EB8B65042BA652BB00A1F067 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B65032BA652BB00A1F067 /* TextArea.swift */; };
 		EBE8873A2B898F7400E2B3CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */; };
 		EBE8873C2B95214900E2B3CF /* UpdateWorkoutPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8873B2B95214900E2B3CF /* UpdateWorkoutPlanView.swift */; };
 		EBE887402B97AD6900E2B3CF /* WorkoutPlanDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE8873F2B97AD6900E2B3CF /* WorkoutPlanDetailView.swift */; };
@@ -108,6 +119,16 @@
 		EB8B64D82B9E35BB00A1F067 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		EB8B64DC2B9E4A6900A1F067 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		EB8B64DE2B9E519900A1F067 /* Swift.gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swift.gitignore; sourceTree = "<group>"; };
+		EB8B64E42BA6379500A1F067 /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		EB8B64E62BA637AC00A1F067 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EB8B64E82BA638E000A1F067 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		EB8B64EE2BA63C0B00A1F067 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		EB8B64F52BA6464300A1F067 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		EB8B64F72BA6465100A1F067 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		EB8B64F92BA646CB00A1F067 /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
+		EB8B64FB2BA646E600A1F067 /* PostRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowViewModel.swift; sourceTree = "<group>"; };
+		EB8B64FD2BA648DC00A1F067 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		EB8B65032BA652BB00A1F067 /* TextArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 		EBE887392B898F7400E2B3CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBE8873B2B95214900E2B3CF /* UpdateWorkoutPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWorkoutPlanView.swift; sourceTree = "<group>"; };
 		EBE8873F2B97AD6900E2B3CF /* WorkoutPlanDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutPlanDetailView.swift; sourceTree = "<group>"; };
@@ -142,6 +163,7 @@
 				EB5EB8AA2B82752A00B61CC0 /* FirebaseAuthCombine-Community in Frameworks */,
 				EB5EB8C82B82752A00B61CC0 /* FirebasePerformance in Frameworks */,
 				EB5EB8C02B82752A00B61CC0 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				EB8B64ED2BA63A4000A1F067 /* Kingfisher in Frameworks */,
 				EB5EB8CE2B82752A00B61CC0 /* FirebaseStorage in Frameworks */,
 				EB5EB8B22B82752A00B61CC0 /* FirebaseDynamicLinks in Frameworks */,
 				EB5EB8B62B82752A00B61CC0 /* FirebaseFirestoreCombine-Community in Frameworks */,
@@ -181,6 +203,7 @@
 		EB7334252B8161C4005798BA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EB8B65032BA652BB00A1F067 /* TextArea.swift */,
 				EB73341D2B7DB344005798BA /* InputView.swift */,
 				EB7334272B8162BA005798BA /* SettingsRowView.swift */,
 				EB6536C32B8444B90084A227 /* ButtonView.swift */,
@@ -225,6 +248,8 @@
 		EB7AF5A62B7ACC19007CDFE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB8B64F42BA6462C00A1F067 /* Feed */,
+				EB8B64EA2BA6391E00A1F067 /* Post */,
 				EB8B64CE2B9E32BE00A1F067 /* ChatGPT */,
 				EB7334252B8161C4005798BA /* Components */,
 				EB6536D32B86A2D80084A227 /* Workout */,
@@ -252,6 +277,8 @@
 				EB7334292B81824E005798BA /* User.swift */,
 				EB6536B92B83F1AD0084A227 /* WorkoutPlan.swift */,
 				EB6536BB2B83F24C0084A227 /* Workout.swift */,
+				EB8B64E62BA637AC00A1F067 /* Post.swift */,
+				EB8B64EE2BA63C0B00A1F067 /* UploadPostViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -263,6 +290,9 @@
 				EB6536D12B8694F40084A227 /* DeleteSet.swift */,
 				EB8B64D12B9E33F000A1F067 /* ChatViewModel.swift */,
 				EB8B64D82B9E35BB00A1F067 /* OpenAIService.swift */,
+				EB8B64E82BA638E000A1F067 /* PostService.swift */,
+				EB8B64FB2BA646E600A1F067 /* PostRowViewModel.swift */,
+				EB8B64FD2BA648DC00A1F067 /* UserService.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -274,6 +304,24 @@
 				EB8B64DC2B9E4A6900A1F067 /* MessageView.swift */,
 			);
 			path = ChatGPT;
+			sourceTree = "<group>";
+		};
+		EB8B64EA2BA6391E00A1F067 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				EB8B64E42BA6379500A1F067 /* NewPostView.swift */,
+				EB8B64F92BA646CB00A1F067 /* PostRowView.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		EB8B64F42BA6462C00A1F067 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				EB8B64F52BA6464300A1F067 /* FeedViewModel.swift */,
+				EB8B64F72BA6465100A1F067 /* FeedView.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +370,7 @@
 				EB5EB8CF2B82752A00B61CC0 /* FirebaseStorageCombine-Community */,
 				EB8B64D42B9E35AF00A1F067 /* Alamofire */,
 				EB8B64D62B9E35AF00A1F067 /* AlamofireDynamic */,
+				EB8B64EC2BA63A4000A1F067 /* Kingfisher */,
 			);
 			productName = One;
 			productReference = EB7AF5EA2B7C16B9007CDFE6 /* TrainX.app */;
@@ -354,6 +403,7 @@
 			packageReferences = (
 				EB5EB89A2B82752A00B61CC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				EB8B64D32B9E35AE00A1F067 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EB8B64EB2BA63A4000A1F067 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = EB7AF58C2B6ECA3F007CDFE6;
 			projectDirPath = "";
@@ -383,33 +433,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8B64F62BA6464300A1F067 /* FeedViewModel.swift in Sources */,
 				EB73341E2B7DB344005798BA /* InputView.swift in Sources */,
 				EB6536BA2B83F1AD0084A227 /* WorkoutPlan.swift in Sources */,
 				EB6536BE2B84199A0084A227 /* CreateWorkoutPlanView.swift in Sources */,
 				EB7334302B819941005798BA /* HomeView.swift in Sources */,
+				EB8B64FA2BA646CB00A1F067 /* PostRowView.swift in Sources */,
 				EB7AF5D62B7C06FA007CDFE6 /* GoogleSignIn.swift in Sources */,
 				EB6536CE2B8569140084A227 /* WorkoutRowView.swift in Sources */,
 				EB7AF5AC2B7ACCFD007CDFE6 /* ChatView.swift in Sources */,
 				EB6536C42B8444B90084A227 /* ButtonView.swift in Sources */,
+				EB8B64F82BA6465100A1F067 /* FeedView.swift in Sources */,
+				EB8B65042BA652BB00A1F067 /* TextArea.swift in Sources */,
 				EB6536BC2B83F24C0084A227 /* Workout.swift in Sources */,
 				EB8B64D22B9E33F000A1F067 /* ChatViewModel.swift in Sources */,
+				EB8B64FE2BA648DC00A1F067 /* UserService.swift in Sources */,
+				EB8B64EF2BA63C0B00A1F067 /* UploadPostViewModel.swift in Sources */,
 				EB6536D02B8691C10084A227 /* WorkoutPlanGridItemView.swift in Sources */,
 				EBE887402B97AD6900E2B3CF /* WorkoutPlanDetailView.swift in Sources */,
 				EB8B64D02B9E334200A1F067 /* Constants.swift in Sources */,
 				EB7334202B800AA6005798BA /* RegistrationView.swift in Sources */,
 				EB7AF59B2B6ECA3F007CDFE6 /* ContentView.swift in Sources */,
 				EB8B64D92B9E35BB00A1F067 /* OpenAIService.swift in Sources */,
+				EB8B64FC2BA646E600A1F067 /* PostRowViewModel.swift in Sources */,
 				EB7AF5A82B7ACC2C007CDFE6 /* HistoryView.swift in Sources */,
 				EB7AF5AA2B7ACC9D007CDFE6 /* WorkoutPlansView.swift in Sources */,
 				EB8B64DD2B9E4A6900A1F067 /* MessageView.swift in Sources */,
 				EB6536CC2B853B5E0084A227 /* WorkoutSetInputView.swift in Sources */,
+				EB8B64E72BA637AC00A1F067 /* Post.swift in Sources */,
 				EBE8873C2B95214900E2B3CF /* UpdateWorkoutPlanView.swift in Sources */,
 				EB7334242B8019DB005798BA /* ProfileView.swift in Sources */,
+				EB8B64E52BA6379500A1F067 /* NewPostView.swift in Sources */,
 				EB73342E2B818E22005798BA /* LoginView.swift in Sources */,
 				EB6536C22B843FAC0084A227 /* WorkoutSetRowView.swift in Sources */,
 				EB7334282B8162BA005798BA /* SettingsRowView.swift in Sources */,
 				EB6536C02B841A6A0084A227 /* CreateWorkoutView.swift in Sources */,
 				EB73342A2B81824E005798BA /* User.swift in Sources */,
+				EB8B64E92BA638E000A1F067 /* PostService.swift in Sources */,
 				EB73342C2B81885B005798BA /* AuthViewModel.swift in Sources */,
 				EB7AF5992B6ECA3F007CDFE6 /* TrainXApp.swift in Sources */,
 				EB7AF5C02B7B0787007CDFE6 /* AuthenticationService.swift in Sources */,
@@ -639,6 +699,14 @@
 				minimumVersion = 5.9.0;
 			};
 		};
+		EB8B64EB2BA63A4000A1F067 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -786,6 +854,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EB8B64D32B9E35AE00A1F067 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = AlamofireDynamic;
+		};
+		EB8B64EC2BA63A4000A1F067 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB8B64EB2BA63A4000A1F067 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
